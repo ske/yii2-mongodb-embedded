@@ -64,6 +64,10 @@ class Storage extends Component implements StorageInterface, \Countable, \Iterat
         return $attributes;
     }
 
+    public function add($object) {
+        $this->_container[] = $object;
+    }
+
     /**
      * Get embedded model by condition
      * @param $condition
